@@ -13,3 +13,4 @@ python main.py && open output.png
 
 # Demo
 ![](output.png)
+![](output2.png)
