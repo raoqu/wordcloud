@@ -63,7 +63,7 @@ if __name__=='__main__':
     jieba.load_userdict(path.join(path.dirname(__file__),'userdict.txt')) # 用户自定义词典
 
     d = path.dirname(__file__)
-    text = open(path.join(d, TEXT_FILE)).read()
+    text = open(path.join(d, TEXT_FILE), 'r', encoding='utf-8').read()
     data_dict = word_segment(text)
     print_data(data_dict, WORD_COUNT)
     generate_wordcloud(data_dict, MASK_IMAGE)
